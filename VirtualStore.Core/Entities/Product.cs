@@ -2,7 +2,7 @@
 {
     public class Product : BaseEntity
     {
-        public Product(string? name, decimal prince, string? description, long stock, string? imageURL, DateTime createdAt, Category? category, int categoryId)
+        public Product(string? name, decimal prince, string? description, long stock, string? imageURL, DateTime createdAt,int categoryId)
         {
             Name = name;
             Prince = prince;
@@ -11,7 +11,6 @@
             ImageURL = imageURL;
 
             CreatedAt = DateTime.Now;
-            Category = category;
             CategoryId = categoryId;
         }
 
@@ -21,7 +20,7 @@
         public long Stock { get; private set; }
         public string? ImageURL { get; private set; }
         public DateTime CreatedAt { get; private set; }
-        public Category Category { get; private set; }
+        public Category? Category { get; private set; }
         public int CategoryId { get; private set; }
     }
 }

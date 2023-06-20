@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using VirtualStore.Infrastructure;
+using VirtualStore.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 

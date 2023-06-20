@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using VirtualStore.Core.Entities;
 
-namespace VirtualStore.Infrastructure
+namespace VirtualStore.Infrastructure.Persistence
 {
     public class VirtualStoreDbContext : DbContext
     {

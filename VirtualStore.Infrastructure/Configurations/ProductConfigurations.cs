@@ -23,7 +23,9 @@ namespace VirtualStore.Infrastructure.Configurations
                 .IsRequired();
 
             builder.Property(x => x.Prince)
-                .HasPrecision(12, 2);
+                .HasColumnType("decimal")
+                .HasPrecision(18, 4)
+                .IsRequired();
 
         }
     }
